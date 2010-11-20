@@ -22,7 +22,7 @@ task :deploy => :build do
   sh 'rsync -rtzh --progress --delete _site/ username@servername:/var/www/websitename/'
 end
 
-desc 'check links for site already running on localhost:4000'
+desc 'Check links for site already running on localhost:4000'
 task :check_links do
   begin
     require 'anemone'
