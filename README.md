@@ -8,9 +8,10 @@ Please don't fork otherwise I'll see lots of noise on the fork queue that are yo
     cd mysite
     rm -rf .git
     git init
+    git add -A
     git commit -m 'initial template based on https://github.com/krisb/jekyll-template'
     git remote add origin git@github.com:username/reponame.git
-    git push origin master
+    git push -u origin master
 
 The following sections detail how to set up and use the template.  The commands are known to work on my macbook, YRMV.
 
