@@ -1,9 +1,6 @@
-# standard jekyll configuration
+# standard jekyll configuration options
 
-permalink: date
-pygments: true
 exclude: ['Rakefile', 'README.md', 'config.rb']
-markdown: rdiscount
 
 # configuration required for some pages
 
