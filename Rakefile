@@ -11,10 +11,10 @@ task :build => :clean do
   jekyll
 end
 
-desc 'Start server with --auto'
+desc 'Start server with --watch'
 task :server => :clean do
   compass
-  jekyll('--server --auto')
+  jekyll('serve --watch')
 end
 
 desc 'Build and deploy'
