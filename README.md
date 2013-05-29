@@ -2,12 +2,13 @@
 
 This is a minimalist template project for jekyll that you can customise to suit your needs.  The idea is to get you up and running with analytics and comments and feedback as quick as possible.
 
-I suggest you follow the [jekyll quick start instructions](http://jekyllrb.com/) to create your blog and then export this template over it:
+I suggest you follow the [jekyll quick start instructions](http://jekyllrb.com/) to create your blog and then sync this template over it:
 
     gem install jekyll
     jekyll new my-awesome-site
+    git clone https://github.com/krisb/jekyll-template.git
+    rsync -av --progress jekyll-template/ my-awesome-site/ --exclude .git --exclude README.md
     cd my-awesome-site
-    git archive --format=tar --remote=https://github.com/krisb/jekyll-template.git master | tar -xf -
     jekyll serve
 
 ## Markup
