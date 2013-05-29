@@ -40,6 +40,7 @@ There are a number of values in `_config.yml` to customise your site.  Change as
 Additionally, you can override and add additional values on a per page or post basis by adding variables into the front matter.  Support for the following is baked in:
 
 * last_updated - will render updated date as well as original post date
+* superseded - reference to a another post url
 
 The following enhancements are baked in and enabled if you provide the configuration required.
 

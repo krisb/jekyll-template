@@ -3,6 +3,16 @@ layout: default
 ---
 {% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
 
+{% if page.superseded %}
+  {% for post in site.posts %}
+    {% if page.superseded == post.url %}
+      <div class="superseded">
+        This guide has been superseded by <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 <div class="post">
 {{ content }}
 </div>
